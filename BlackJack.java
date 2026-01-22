@@ -105,6 +105,8 @@ public class BlackJack {
     }
 
     private static int dealCard() {
+        //Performing % 13 here strips the Suit information. 
+        // It returns a value 0-12, making it impossible to determine the Suit later.
         return DECK[currentCardIndex++] % 13;
     }
 
